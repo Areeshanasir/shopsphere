@@ -1,0 +1,43 @@
+/* ===========================
+   EMPTY STATE
+=========================== */
+
+.empty-state {
+  width: 100%;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px dashed #c8a97e;
+  background: #f8f5f0;
+  border-radius: 18px;
+  margin: 2rem 0;
+  padding: 2.5rem;
+}
+
+.empty-state h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.8rem;
+  color: #111111;
+}
+
+.empty-state p {
+  color: #666666;
+  max-width: 380px;
+  line-height: 1.7;
+}
+
+.dark .empty-state {
+  background: #1b1b1b;
+  border-color: #c8a97e;
+}
+
+.dark .empty-state h2 {
+  color: white;
+}
+
+.dark .empty-state p {
+  color: #d1d1d1;
+}

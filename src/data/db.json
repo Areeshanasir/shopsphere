@@ -1,0 +1,484 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Wireless Headphones",
+      "category": "Electronics",
+      "price": 132,
+      "rating": 3.8,
+      "image": "https://picsum.photos/300?random=2"
+    },
+    {
+      "id": 2,
+      "title": "Gaming Mouse",
+      "category": "Electronics",
+      "price": 109,
+      "rating": 3.9,
+      "image": "https://picsum.photos/300?random=3"
+    },
+    {
+      "id": 3,
+      "title": "Mechanical Keyboard",
+      "category": "Electronics",
+      "price": 136,
+      "rating": 3.2,
+      "image": "https://picsum.photos/300?random=4"
+    },
+    {
+      "id": 4,
+      "title": "Bluetooth Speaker",
+      "category": "Electronics",
+      "price": 23,
+      "rating": 3.5,
+      "image": "https://picsum.photos/300?random=5"
+    },
+    {
+      "id": 5,
+      "title": "USB-C Hub",
+      "category": "Electronics",
+      "price": 196,
+      "rating": 4.4,
+      "image": "https://picsum.photos/300?random=6"
+    },
+    {
+      "id": 6,
+      "title": "Smartphone Stand",
+      "category": "Electronics",
+      "price": 128,
+      "rating": 4,
+      "image": "https://picsum.photos/300?random=7"
+    },
+    {
+      "id": 7,
+      "title": "Webcam",
+      "category": "Electronics",
+      "price": 196,
+      "rating": 3.7,
+      "image": "https://picsum.photos/300?random=8"
+    },
+    {
+      "id": 8,
+      "title": "Portable SSD",
+      "category": "Electronics",
+      "price": 162,
+      "rating": 4.7,
+      "image": "https://picsum.photos/300?random=9"
+    },
+    {
+      "id": 9,
+      "title": "Laptop Sleeve",
+      "category": "Electronics",
+      "price": 74,
+      "rating": 4.4,
+      "image": "https://picsum.photos/300?random=10"
+    },
+    {
+      "id": 10,
+      "title": "Wireless Charger",
+      "category": "Electronics",
+      "price": 68,
+      "rating": 3.3,
+      "image": "https://picsum.photos/300?random=11"
+    },
+    {
+      "id": 11,
+      "title": "Noise Cancelling Earbuds",
+      "category": "Electronics",
+      "price": 158,
+      "rating": 3.7,
+      "image": "https://picsum.photos/300?random=12"
+    },
+    {
+      "id": 12,
+      "title": "Smart Watch",
+      "category": "Electronics",
+      "price": 97,
+      "rating": 3.7,
+      "image": "https://picsum.photos/300?random=13"
+    },
+    {
+      "id": 13,
+      "title": "Casual T-Shirt",
+      "category": "Fashion",
+      "price": 197,
+      "rating": 3.3,
+      "image": "https://picsum.photos/300?random=14"
+    },
+    {
+      "id": 14,
+      "title": "Slim Fit Jeans",
+      "category": "Fashion",
+      "price": 23,
+      "rating": 4.4,
+      "image": "https://picsum.photos/300?random=15"
+    },
+    {
+      "id": 15,
+      "title": "Running Shoes",
+      "category": "Fashion",
+      "price": 23,
+      "rating": 4.4,
+      "image": "https://picsum.photos/300?random=16"
+    },
+    {
+      "id": 16,
+      "title": "Leather Jacket",
+      "category": "Fashion",
+      "price": 124,
+      "rating": 3.1,
+      "image": "https://picsum.photos/300?random=17"
+    },
+    {
+      "id": 17,
+      "title": "Hoodie",
+      "category": "Fashion",
+      "price": 192,
+      "rating": 3.2,
+      "image": "https://picsum.photos/300?random=18"
+    },
+    {
+      "id": 18,
+      "title": "Formal Shirt",
+      "category": "Fashion",
+      "price": 36,
+      "rating": 3.1,
+      "image": "https://picsum.photos/300?random=19"
+    },
+    {
+      "id": 19,
+      "title": "Cargo Pants",
+      "category": "Fashion",
+      "price": 198,
+      "rating": 4.7,
+      "image": "https://picsum.photos/300?random=20"
+    },
+    {
+      "id": 20,
+      "title": "Sneakers",
+      "category": "Fashion",
+      "price": 125,
+      "rating": 3.2,
+      "image": "https://picsum.photos/300?random=21"
+    },
+    {
+      "id": 21,
+      "title": "Baseball Cap",
+      "category": "Fashion",
+      "price": 191,
+      "rating": 3,
+      "image": "https://picsum.photos/300?random=22"
+    },
+    {
+      "id": 22,
+      "title": "Denim Jacket",
+      "category": "Fashion",
+      "price": 189,
+      "rating": 3.4,
+      "image": "https://picsum.photos/300?random=23"
+    },
+    {
+      "id": 23,
+      "title": "Summer Dress",
+      "category": "Fashion",
+      "price": 112,
+      "rating": 4.5,
+      "image": "https://picsum.photos/300?random=24"
+    },
+    {
+      "id": 24,
+      "title": "Sports Shorts",
+      "category": "Fashion",
+      "price": 146,
+      "rating": 4.4,
+      "image": "https://picsum.photos/300?random=25"
+    },
+    {
+      "id": 25,
+      "title": "Face Wash",
+      "category": "Beauty",
+      "price": 175,
+      "rating": 3.6,
+      "image": "https://picsum.photos/300?random=26"
+    },
+    {
+      "id": 26,
+      "title": "Vitamin C Serum",
+      "category": "Beauty",
+      "price": 60,
+      "rating": 3.1,
+      "image": "https://picsum.photos/300?random=27"
+    },
+    {
+      "id": 27,
+      "title": "Moisturizer",
+      "category": "Beauty",
+      "price": 134,
+      "rating": 3.1,
+      "image": "https://picsum.photos/300?random=28"
+    },
+    {
+      "id": 28,
+      "title": "Lipstick",
+      "category": "Beauty",
+      "price": 42,
+      "rating": 4.9,
+      "image": "https://picsum.photos/300?random=29"
+    },
+    {
+      "id": 29,
+      "title": "Perfume",
+      "category": "Beauty",
+      "price": 42,
+      "rating": 3.6,
+      "image": "https://picsum.photos/300?random=30"
+    },
+    {
+      "id": 30,
+      "title": "Hair Dryer",
+      "category": "Beauty",
+      "price": 133,
+      "rating": 4.1,
+      "image": "https://picsum.photos/300?random=31"
+    },
+    {
+      "id": 31,
+      "title": "Hair Oil",
+      "category": "Beauty",
+      "price": 127,
+      "rating": 3.9,
+      "image": "https://picsum.photos/300?random=32"
+    },
+    {
+      "id": 32,
+      "title": "Foundation",
+      "category": "Beauty",
+      "price": 23,
+      "rating": 4.7,
+      "image": "https://picsum.photos/300?random=33"
+    },
+    {
+      "id": 33,
+      "title": "Mascara",
+      "category": "Beauty",
+      "price": 146,
+      "rating": 4.8,
+      "image": "https://picsum.photos/300?random=34"
+    },
+    {
+      "id": 34,
+      "title": "Sunscreen",
+      "category": "Beauty",
+      "price": 132,
+      "rating": 5,
+      "image": "https://picsum.photos/300?random=35"
+    },
+    {
+      "id": 35,
+      "title": "Body Lotion",
+      "category": "Beauty",
+      "price": 148,
+      "rating": 3.7,
+      "image": "https://picsum.photos/300?random=36"
+    },
+    {
+      "id": 36,
+      "title": "Face Mask",
+      "category": "Beauty",
+      "price": 36,
+      "rating": 3.6,
+      "image": "https://picsum.photos/300?random=37"
+    },
+    {
+      "id": 37,
+      "title": "Coffee Mug",
+      "category": "Home",
+      "price": 88,
+      "rating": 4.5,
+      "image": "https://picsum.photos/300?random=38"
+    },
+    {
+      "id": 38,
+      "title": "Wall Clock",
+      "category": "Home",
+      "price": 184,
+      "rating": 4.5,
+      "image": "https://picsum.photos/300?random=39"
+    },
+    {
+      "id": 39,
+      "title": "Desk Lamp",
+      "category": "Home",
+      "price": 180,
+      "rating": 3.8,
+      "image": "https://picsum.photos/300?random=40"
+    },
+    {
+      "id": 40,
+      "title": "Floor Mat",
+      "category": "Home",
+      "price": 186,
+      "rating": 3.2,
+      "image": "https://picsum.photos/300?random=41"
+    },
+    {
+      "id": 41,
+      "title": "Storage Basket",
+      "category": "Home",
+      "price": 178,
+      "rating": 3.2,
+      "image": "https://picsum.photos/300?random=42"
+    },
+    {
+      "id": 42,
+      "title": "Cookware Set",
+      "category": "Home",
+      "price": 113,
+      "rating": 4.9,
+      "image": "https://picsum.photos/300?random=43"
+    },
+    {
+      "id": 43,
+      "title": "Pillow",
+      "category": "Home",
+      "price": 62,
+      "rating": 3.4,
+      "image": "https://picsum.photos/300?random=44"
+    },
+    {
+      "id": 44,
+      "title": "Bedsheet Set",
+      "category": "Home",
+      "price": 92,
+      "rating": 4.2,
+      "image": "https://picsum.photos/300?random=45"
+    },
+    {
+      "id": 45,
+      "title": "Dining Plate",
+      "category": "Home",
+      "price": 172,
+      "rating": 4.6,
+      "image": "https://picsum.photos/300?random=46"
+    },
+    {
+      "id": 46,
+      "title": "Water Bottle",
+      "category": "Home",
+      "price": 72,
+      "rating": 3.3,
+      "image": "https://picsum.photos/300?random=47"
+    },
+    {
+      "id": 47,
+      "title": "Plant Pot",
+      "category": "Home",
+      "price": 118,
+      "rating": 3.1,
+      "image": "https://picsum.photos/300?random=48"
+    },
+    {
+      "id": 48,
+      "title": "Table Organizer",
+      "category": "Home",
+      "price": 72,
+      "rating": 4.9,
+      "image": "https://picsum.photos/300?random=49"
+    },
+    {
+      "id": 49,
+      "title": "Classic Watch",
+      "category": "Watches",
+      "price": 182,
+      "rating": 4.7,
+      "image": "https://picsum.photos/300?random=50"
+    },
+    {
+      "id": 50,
+      "title": "Digital Watch",
+      "category": "Watches",
+      "price": 176,
+      "rating": 3.1,
+      "image": "https://picsum.photos/300?random=51"
+    },
+    {
+      "id": 51,
+      "title": "Luxury Watch",
+      "category": "Watches",
+      "price": 56,
+      "rating": 3.7,
+      "image": "https://picsum.photos/300?random=52"
+    },
+    {
+      "id": 52,
+      "title": "Fitness Watch",
+      "category": "Watches",
+      "price": 90,
+      "rating": 4.3,
+      "image": "https://picsum.photos/300?random=53"
+    },
+    {
+      "id": 53,
+      "title": "Leather Strap Watch",
+      "category": "Watches",
+      "price": 147,
+      "rating": 4,
+      "image": "https://picsum.photos/300?random=54"
+    },
+    {
+      "id": 54,
+      "title": "Sports Watch",
+      "category": "Watches",
+      "price": 89,
+      "rating": 4.1,
+      "image": "https://picsum.photos/300?random=55"
+    },
+    {
+      "id": 55,
+      "title": "Analog Watch",
+      "category": "Watches",
+      "price": 114,
+      "rating": 4.9,
+      "image": "https://picsum.photos/300?random=56"
+    },
+    {
+      "id": 56,
+      "title": "Minimal Watch",
+      "category": "Watches",
+      "price": 97,
+      "rating": 4.2,
+      "image": "https://picsum.photos/300?random=57"
+    },
+    {
+      "id": 57,
+      "title": "Chronograph Watch",
+      "category": "Watches",
+      "price": 187,
+      "rating": 4.6,
+      "image": "https://picsum.photos/300?random=58"
+    },
+    {
+      "id": 58,
+      "title": "Smart Watch",
+      "category": "Watches",
+      "price": 92,
+      "rating": 3.6,
+      "image": "https://picsum.photos/300?random=59"
+    },
+    {
+      "id": 59,
+      "title": "Premium Watch",
+      "category": "Watches",
+      "price": 181,
+      "rating": 4,
+      "image": "https://picsum.photos/300?random=60"
+    },
+    {
+      "id": 60,
+      "title": "Silver Watch",
+      "category": "Watches",
+      "price": 38,
+      "rating": 4.4,
+      "image": "https://picsum.photos/300?random=61"
+    }
+  ]
+}
