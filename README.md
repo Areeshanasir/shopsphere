@@ -1,11 +1,12 @@
-# 🛍️ ShopSphere – Responsive Product Catalog & Design System
+# 🛍️ ShopSphere – Responsive Product Catalog & Shopping Cart
 
-ShopSphere is a modern, responsive e-commerce product catalog built using **React, Vite, Tailwind CSS, JSON Server, and Storybook**. The project demonstrates reusable UI components, responsive layouts, accessibility, and a mock API while following a component-based architecture.
+ShopSphere is a modern, responsive e-commerce web application built using **React, Vite, Tailwind CSS, JSON Server, Storybook, React Router, and XState**. The project demonstrates reusable UI components, responsive layouts, accessibility, state management, client-side validation, and a mock REST API following a component-based architecture.
 
 ---
 
 ## ✨ Features
 
+### Week 1 – Product Catalog
 
 - Search products by name
 - Category filtering
@@ -18,14 +19,28 @@ ShopSphere is a modern, responsive e-commerce product catalog built using **Reac
 - Storybook component documentation
 - Mock REST API with 60+ products using JSON Server
 
+### Week 2 – Product Details & Shopping Cart
+
+- Product Details page using React Router
+- Accessible product image gallery
+- Shopping Cart powered by XState
+- Add, Remove and Clear Cart functionality
+- Quantity update with client-side validation
+- Toast notifications for cart actions
+- Unit tests for XState cart machine using Vitest
+
 ---
 
 ## 🛠️ Tech Stack
 
 - **Frontend:** React + Vite
 - **Styling:** Tailwind CSS
+- **Routing:** React Router DOM
+- **State Management:** XState
 - **Mock API:** JSON Server
 - **Component Library:** Storybook
+- **Notifications:** React Hot Toast
+- **Testing:** Vitest
 - **Icons:** React Icons
 
 ---
@@ -35,7 +50,7 @@ ShopSphere is a modern, responsive e-commerce product catalog built using **Reac
 ```
 ShopSphere
 │
-├── App.jsx
+├── App
 │
 ├── Navbar
 ├── Hero
@@ -49,15 +64,27 @@ ShopSphere
 │      ├── Error State
 │      └── Product Cards
 │
+├── Product Details
+│
+├── Shopping Cart
+│      ├── Add Item
+│      ├── Remove Item
+│      ├── Update Quantity
+│      └── Clear Cart
+│
 └── Footer
 ```
 
-### Folder Structure
+---
+
+## 📁 Folder Structure
 
 ```
 ShopSphere/
 │
 ├── .storybook/
+│
+├── public/
 │
 ├── src/
 │   ├── components/
@@ -68,18 +95,30 @@ ShopSphere/
 │   │   ├── ProductSection.jsx
 │   │   ├── ProductCard.jsx
 │   │   ├── ProductCard.stories.jsx
+│   │   ├── ProductDetails.jsx
+│   │   ├── Cart.jsx
 │   │   ├── SkeletonCard.jsx
 │   │   ├── EmptyState.jsx
 │   │   ├── ErrorState.jsx
 │   │   └── Footer.jsx
 │   │
+│   ├── context/
+│   │   └── CartProvider.jsx
+│   │
+│   ├── machines/
+│   │   └── cartMachine.js
+│   │
 │   ├── hooks/
 │   │   └── useProducts.js
+│   │
+│   ├── tests/
+│   │   └── cartMachine.test.js
 │   │
 │   ├── data/
 │   │   └── db.json
 │   │
 │   ├── App.jsx
+│   ├── ErrorBoundary.jsx
 │   ├── main.jsx
 │   └── index.css
 │
@@ -92,32 +131,60 @@ ShopSphere/
 
 ---
 
-## Local Setup
-
-Follow these steps to set up and run both the Web Application and Storybook playground on your local machine.
+## 🚀 Local Setup
 
 ### Prerequisites
 
-Ensure you have **Node.js** (v18.x or higher) and `npm` installed.
+- Node.js (v18 or higher)
+- npm
 
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd product-catalog
+git clone https://github.com/Areeshanasir/shopsphere.git
+cd shopsphere
+```
 
-## 2.install dependencies 
+### 2. Install Dependencies
 
+```bash
 npm install
+```
 
- ## 3. Start the Mock API Server
+### 3. Start the Mock API
 
-npx json-server --watch db.json --port 5001
+```bash
+npm run server
+```
 
-## 4. Launch the Development Web Application
+### 4. Start the Development Server
 
+```bash
 npm run dev
+```
 
-## 5.Run Storybook
+### 5. Run Storybook
 
+```bash
 npm run storybook
+```
+
+### 6. Run Unit Tests
+
+```bash
+npm test
+```
+
+---
+
+## ✅ Week 2 Deliverables
+
+- Accessible Product Details Page
+- Image Gallery
+- Shopping Cart using XState
+- Quantity Validation
+- Toast Notifications
+- Unit Tests (Vitest)
+- React Router Navigation
+
+---

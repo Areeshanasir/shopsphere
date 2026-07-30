@@ -19,6 +19,8 @@ console.log("Fetching:", `${API_URL}/products`);
         }
 
        const data = await res.json();
+       console.log("Fetched data:", data);
+console.log("Is Array?", Array.isArray(data));
 
 // Temporary delay for testing
 await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -35,7 +37,11 @@ setProducts(data);
     fetchProducts();
   }, []);
 
-  return { products, loading, error };
+ return {
+  products,
+  loading,
+  error,
+};
 }
 
 export default useProducts;

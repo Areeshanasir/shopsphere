@@ -1,9 +1,16 @@
+import toast from "react-hot-toast";
+import { useCart } from "../context/CartProvider";
+import { Link } from "react-router-dom";
 import { FaHeart, FaStar } from "react-icons/fa";
 
 function ProductCard({ product }) {
+  const { send } = useCart();
   return (
-    <div className="group overflow-hidden rounded-3xl border border-[#E8E2D8] bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-[#3A3A3A] dark:bg-[#1B1B1B]">
-
+  <Link
+    to={`/product/${product.id}`}
+    aria-label={`View details for ${product.title}`}
+  >
+    <div className="group overflow-hidden rounded-3xl border border-stone-200 bg-[#FFFDF8] shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-[#4B3E35] dark:bg-[#2B2521]">
       {/* Image */}
       <div className="relative overflow-hidden">
 
@@ -47,15 +54,28 @@ function ProductCard({ product }) {
             ${product.price}
           </span>
 
-          <button className="rounded-xl bg-[#111111] px-5 py-2 font-medium text-white transition hover:bg-[#C8A97E] dark:bg-[#C8A97E] dark:text-[#111111] dark:hover:bg-[#B79265]">
-            Buy Now
-          </button>
+          <button
+  onClick={(e) => {
+  e.preventDefault();
+
+  send({
+    type: "ADD_ITEM",
+    product,
+  });
+
+  toast.success("Product added to cart!");
+}}
+  className="rounded-xl bg-amber-600 px-5 py-2 font-medium text-white transition hover:bg-amber-700"
+>
+  Add to Cart
+</button>
 
         </div>
 
       </div>
 
-    </div>
+        </div>
+  </Link>
   );
 }
 

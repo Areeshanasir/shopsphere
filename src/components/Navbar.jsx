@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+import { useCart } from "../context/CartProvider";
 import { FiSearch, FiShoppingCart, FiUser, FiMoon, FiSun } from "react-icons/fi";
 import { useState, useEffect } from "react";
 
 function Navbar() {
+  const { cart } = useCart();
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
@@ -48,9 +51,18 @@ function Navbar() {
             <FiSearch />
           </button>
 
-          <button className="rounded-full border border-[#E8E2D8] bg-white p-2 text-[#111111] shadow-sm transition hover:bg-[#C8A97E] hover:text-white dark:border-[#3A3A3A] dark:bg-[#1B1B1B] dark:text-white">
-            <FiShoppingCart />
-          </button>
+          <Link
+  to="/cart"
+  className="relative rounded-full p-2 hover:bg-stone-100 dark:hover:bg-stone-700"
+>
+  <FiShoppingCart />
+
+  {cart.length > 0 && (
+    <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-amber-600 text-xs text-white">
+      {cart.length}
+    </span>
+  )}
+</Link>
 
           <button className="rounded-full border border-[#E8E2D8] bg-white p-2 text-[#111111] shadow-sm transition hover:bg-[#C8A97E] hover:text-white dark:border-[#3A3A3A] dark:bg-[#1B1B1B] dark:text-white">
             <FiUser />

@@ -1,21 +1,32 @@
 import ProductCard from "./ProductCard";
-
-const sampleProduct = {
-  id: 1,
-  title: "Premium Leather Watch",
-  category: "Watches",
-  price: 149,
-  rating: 4.8,
-  image: "https://picsum.photos/400/500?random=1",
-};
+import { BrowserRouter } from "react-router-dom";
+import { CartProvider } from "../context/CartProvider";
 
 export default {
-  title: "Components/Product Card",
+  title: "Components/ProductCard",
   component: ProductCard,
+  decorators: [
+    (Story) => (
+      <BrowserRouter>
+        <CartProvider>
+          <Story />
+        </CartProvider>
+      </BrowserRouter>
+    ),
+  ],
 };
 
-export const Default = () => (
-  <div style={{ width: "350px", padding: "20px" }}>
-    <ProductCard product={sampleProduct} />
-  </div>
-);
+const product = {
+  id: 1,
+  title: "Wireless Headphones",
+  category: "Electronics",
+  price: 99,
+  rating: 4.8,
+  image: "https://picsum.photos/300",
+};
+
+export const Default = {
+  args: {
+    product,
+  },
+};
