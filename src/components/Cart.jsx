@@ -101,21 +101,31 @@ function Cart() {
       ))}
 
       <div className="rounded-2xl bg-amber-600 p-6 text-white">
-        <h2 className="text-2xl font-bold">
-          Total: £{total.toFixed(2)}
-        </h2>
+  <h2 className="text-2xl font-bold">
+    Total: £{total.toFixed(2)}
+  </h2>
 
-        <button
-          onClick={() => {
-  send({ type: "CLEAR_CART" });
+  <div className="mt-4 flex flex-wrap gap-3">
+    <button
+      onClick={() => {
+        send({ type: "CLEAR_CART" });
+        toast.success("Cart cleared");
+      }}
+      className="rounded-xl bg-white px-6 py-3 font-semibold text-amber-600"
+    >
+      Clear Cart
+    </button>
 
-  toast.success("Cart cleared");
-}}
-          className="mt-4 rounded-xl bg-white px-6 py-3 font-semibold text-amber-600"
-        >
-          Clear Cart
-        </button>
-      </div>
+    <button
+      onClick={() => {
+        window.location.href = "/checkout";
+      }}
+      className="rounded-xl bg-black px-6 py-3 font-semibold text-white hover:bg-stone-800"
+    >
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
     </div>
   );
 }

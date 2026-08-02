@@ -65,12 +65,20 @@ ShopSphere
 │      └── Product Cards
 │
 ├── Product Details
+│      └── Image Gallery
 │
 ├── Shopping Cart
 │      ├── Add Item
 │      ├── Remove Item
 │      ├── Update Quantity
-│      └── Clear Cart
+│      ├── Optimistic Updates
+│      └── Rollback
+│
+├── Checkout
+│      ├── Cart
+│      ├── Shipping
+│      ├── Payment
+│      └── Confirmation
 │
 └── Footer
 ```
@@ -97,6 +105,7 @@ ShopSphere/
 │   │   ├── ProductCard.stories.jsx
 │   │   ├── ProductDetails.jsx
 │   │   ├── Cart.jsx
+│   │   ├── Checkout.jsx
 │   │   ├── SkeletonCard.jsx
 │   │   ├── EmptyState.jsx
 │   │   ├── ErrorState.jsx
@@ -106,13 +115,15 @@ ShopSphere/
 │   │   └── CartProvider.jsx
 │   │
 │   ├── machines/
-│   │   └── cartMachine.js
+│   │   ├── cartMachine.js
+│   │   └── checkoutMachine.js
 │   │
 │   ├── hooks/
 │   │   └── useProducts.js
 │   │
 │   ├── tests/
-│   │   └── cartMachine.test.js
+│   │   ├── cartMachine.test.js
+│   │   └── optimisticCart.test.js
 │   │
 │   ├── data/
 │   │   └── db.json
@@ -127,8 +138,6 @@ ShopSphere/
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
-```
-
 ---
 
 ## 🚀 Local Setup
@@ -188,3 +197,15 @@ npm test
 - React Router Navigation
 
 ---
+
+✅ Week 3 Deliverables
+Optimistic UI cart updates
+Automatic rollback logic
+XState checkout machine
+Multi-step checkout flow
+Shipping validation
+Payment validation
+Cart → Shipping → Payment → Confirmation flow
+Responsive mobile and desktop checkout testing
+Optimistic update unit tests
+20 passing tests

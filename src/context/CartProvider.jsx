@@ -1,6 +1,7 @@
 import { createContext, useContext } from "react";
 import { useMachine } from "@xstate/react";
 import { cartMachine } from "../machines/cartMachine";
+import { Toaster } from "react-hot-toast";
 
 const CartContext = createContext(null);
 
@@ -9,13 +10,14 @@ export function CartProvider({ children }) {
 
   return (
     <CartContext.Provider
-  value={{
-    cart: state.context.items,
-    send,
-  }}
->
-  {children}
-</CartContext.Provider>
+      value={{
+        cart: state.context.items,
+        send,
+      }}
+    >
+      {children}
+      <Toaster position="top-right" />
+    </CartContext.Provider>
   );
 }
 
