@@ -1,10 +1,18 @@
+import ConnectionStatus from "./ConnectionStatus";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartProvider";
-import { FiSearch, FiShoppingCart, FiUser, FiMoon, FiSun } from "react-icons/fi";
+import {
+  FiSearch,
+  FiShoppingCart,
+  FiUser,
+  FiMoon,
+  FiSun,
+} from "react-icons/fi";
 import { useState, useEffect } from "react";
 
 function Navbar() {
   const { cart } = useCart();
+
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
@@ -30,41 +38,95 @@ function Navbar() {
 
         {/* Links */}
         <ul className="hidden gap-8 text-[#444444] md:flex dark:text-[#D1D1D1]">
-          <li><a href="#" className="transition hover:text-[#C8A97E]">Home</a></li>
-          <li><a href="#" className="transition hover:text-[#C8A97E]">Products</a></li>
-          <li><a href="#" className="transition hover:text-[#C8A97E]">Categories</a></li>
-          <li><a href="#" className="transition hover:text-[#C8A97E]">Deals</a></li>
-          <li><a href="#" className="transition hover:text-[#C8A97E]">Contact</a></li>
+          <li>
+            <a
+              href="#"
+              className="transition hover:text-[#C8A97E]"
+            >
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              className="transition hover:text-[#C8A97E]"
+            >
+              Products
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              className="transition hover:text-[#C8A97E]"
+            >
+              Categories
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              className="transition hover:text-[#C8A97E]"
+            >
+              Deals
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              className="transition hover:text-[#C8A97E]"
+            >
+              Contact
+            </a>
+          </li>
         </ul>
 
-        {/* Icons */}
-        <div className="flex items-center gap-4 text-xl">
+        {/* Icons + WebSocket Status */}
+        <div className="flex items-center gap-3 text-xl">
 
+          {/* Real-time Inventory Connection Status */}
+          <ConnectionStatus />
+
+          {/* Dark Mode */}
           <button
             onClick={() => setDarkMode(!darkMode)}
+            aria-label="Toggle dark mode"
             className="rounded-full border border-[#E8E2D8] bg-white p-2 text-[#111111] shadow-sm transition hover:bg-[#C8A97E] hover:text-white dark:border-[#3A3A3A] dark:bg-[#1B1B1B] dark:text-white"
           >
             {darkMode ? <FiSun /> : <FiMoon />}
           </button>
 
-          <button className="rounded-full border border-[#E8E2D8] bg-white p-2 text-[#111111] shadow-sm transition hover:bg-[#C8A97E] hover:text-white dark:border-[#3A3A3A] dark:bg-[#1B1B1B] dark:text-white">
+          {/* Search */}
+          <button
+            aria-label="Search"
+            className="rounded-full border border-[#E8E2D8] bg-white p-2 text-[#111111] shadow-sm transition hover:bg-[#C8A97E] hover:text-white dark:border-[#3A3A3A] dark:bg-[#1B1B1B] dark:text-white"
+          >
             <FiSearch />
           </button>
 
+          {/* Cart */}
           <Link
-  to="/cart"
-  className="relative rounded-full p-2 hover:bg-stone-100 dark:hover:bg-stone-700"
->
-  <FiShoppingCart />
+            to="/cart"
+            aria-label="Shopping cart"
+            className="relative rounded-full p-2 hover:bg-stone-100 dark:hover:bg-stone-700"
+          >
+            <FiShoppingCart />
 
-  {cart.length > 0 && (
-    <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-amber-600 text-xs text-white">
-      {cart.length}
-    </span>
-  )}
-</Link>
+            {cart.length > 0 && (
+              <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-amber-600 text-xs text-white">
+                {cart.length}
+              </span>
+            )}
+          </Link>
 
-          <button className="rounded-full border border-[#E8E2D8] bg-white p-2 text-[#111111] shadow-sm transition hover:bg-[#C8A97E] hover:text-white dark:border-[#3A3A3A] dark:bg-[#1B1B1B] dark:text-white">
+          {/* User */}
+          <button
+            aria-label="User account"
+            className="rounded-full border border-[#E8E2D8] bg-white p-2 text-[#111111] shadow-sm transition hover:bg-[#C8A97E] hover:text-white dark:border-[#3A3A3A] dark:bg-[#1B1B1B] dark:text-white"
+          >
             <FiUser />
           </button>
 
